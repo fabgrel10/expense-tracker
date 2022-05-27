@@ -24,7 +24,7 @@ html {
   box-sizing: inherit;
 }
 
-.fijar {
+.fix {
   overflow: hidden;
   height: 100vh;
 }
@@ -37,7 +37,7 @@ h2 {
   font-size: 3rem;
 }
 
-.sombra {
+.shadow {
   padding: 4rem;
   background-color: var(--blanco);
   border-radius: 1.2rem;
@@ -56,7 +56,7 @@ header h1 {
   text-transform: uppercase;
 }
 
-.formulario {
+.form {
   width: 95%;
   padding: 10rem 0;
   margin: 0 auto;
@@ -69,7 +69,7 @@ header h1 {
   }
 }
 
-.formulario legend {
+.form legend {
   display: block;
   padding-bottom: 1rem;
   border-bottom: 2px solid var(--azul);
@@ -80,20 +80,20 @@ header h1 {
   text-transform: uppercase;
 }
 
-.formulario .campo {
+.form .field {
   display: grid;
   margin-bottom: 2rem;
 }
 
-.formulario label {
+.form label {
   margin-bottom: 2rem;
   color: var(--azul);
   font-size: 2.8rem;
   text-align: center;
 }
 
-.formulario input[type='text'],
-.formulario input[type='number'] {
+.form input[type='text'],
+.form input[type='number'] {
   flex: 1;
   padding: 1rem;
   border: none;
@@ -102,7 +102,7 @@ header h1 {
   font-size: 1.6rem;
 }
 
-.formulario input[type='submit'] {
+.form input[type='submit'] {
   width: 100%;
   padding: 1rem;
   border: none;
@@ -116,18 +116,18 @@ header h1 {
   transition: background-color 300ms ease;
 }
 @media (min-width: 768px) {
-  .formulario input[type='submit'] {
+  .form input[type='submit'] {
     display: block;
     padding: 1rem 5rem;
   }
 }
 
-.formulario input[type='submit']:hover {
+.form input[type='submit']:hover {
   background-color: #042a67;
   cursor: pointer;
 }
 
-.formulario select {
+.form select {
   flex: 1;
   padding: 1rem;
   border: none;
@@ -136,7 +136,7 @@ header h1 {
   text-align: center;
 }
 
-.alerta {
+.alert {
   max-width: 60rem;
   padding: 2rem 5rem;
   margin: 2rem auto;
@@ -146,22 +146,22 @@ header h1 {
   text-transform: uppercase;
 }
 
-.alerta.error {
+.alert.error {
   border-left: 5px solid #b91c1c;
   background-color: var(--blanco);
   color: #b91c1c;
 }
 
-.alerta.success {
+.alert.success {
 }
 
-.contenedor {
+.container {
   width: 90%;
   max-width: 80rem;
   margin: 0 auto;
 }
 
-.contenedor-presupuesto {
+.container-budget {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -169,62 +169,62 @@ header h1 {
   transform: translateY(5rem);
 }
 
-.dos-columnas {
+.two-columns {
   flex-direction: column;
 }
 
-.dos-columnas :first-child {
+.two-columns :first-child {
   margin-bottom: 4rem;
 }
 @media (min-width: 768px) {
-  .dos-columnas {
+  .two-columns {
     flex-direction: row;
     align-items: center;
     gap: 4rem;
   }
 
-  .dos-columnas > div {
+  .two-columns > div {
     width: 50%;
   }
 
-  .dos-columnas :first-child {
+  .two-columns :first-child {
     margin-bottom: 0;
   }
 }
 
-.formulario input[type='text'].nuevo-presupuesto,
-.formulario input[type='number'].nuevo-presupuesto {
+.form input[type='text'].new-budget,
+.form input[type='number'].new-budget {
   font-size: 2.8rem;
   text-align: center;
 }
 
-.contenedor-presupuesto svg {
+.container-budget svg {
   width: 25rem;
 }
 
-.contenido-presupuesto {
+.content-budget {
   width: 100%;
 }
 
-.contenido-presupuesto p {
+.content-budget p {
   color: var(--gris-oscuro);
   font-size: 2.4rem;
   font-weight: 400;
   text-align: center;
 }
 @media (min-width: 768px) {
-  .contenido-presupuesto p {
+  .content-budget p {
     text-align: left;
   }
 }
 
-.contenido-presupuesto span {
+.content-budget span {
   color: var(--azul);
   font-weight: 900;
 }
 
-.contenido-presupuesto p.negativo,
-.contenido-presupuesto p.negativo span {
+.content-budget p.negative,
+.content-budget p.negative span {
   color: red;
 }
 
@@ -251,19 +251,19 @@ main {
   padding-top: 10rem;
 }
 
-.filtros .campo {
+.filters .field {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-.filtros label {
+.filters label {
   color: var(--gris-oscuro);
   font-size: 3rem;
   font-weight: 900;
 }
 
-.filtros select {
+.filters select {
   flex: 1;
   padding: 1rem;
   border: none;
@@ -272,21 +272,21 @@ main {
   text-align: center;
 }
 
-.listado-gastos {
+.expenses-list {
   margin-top: 5rem;
 }
 
-.listado-gastos h2 {
+.expenses-list h2 {
   color: var(--gris-oscuro);
   font-weight: 900;
 }
 
-.no-gastos {
+.no-expenses {
   font-size: 2.2rem;
   text-align: center;
 }
 
-.gasto {
+.expense {
   display: flex;
   width: 100%;
   align-items: center;
@@ -295,68 +295,68 @@ main {
   gap: 2rem;
 }
 
-.cantidad-gasto {
+.expenses-amount {
   color: var(--negro);
   font-size: 2.4rem;
   font-weight: 900;
 }
 
-.contenido-gasto {
+.content-expense {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-.contenido-gasto img {
+.content-expense img {
   width: 10rem;
 }
 
-.descripcion-gasto p {
+.expense-description p {
   margin: 0 0 0.3rem;
 }
 
-.descripcion-gasto .categoria {
+.expense-description .categoria {
   color: var(--gris);
   font-size: 1.6rem;
   font-weight: 900;
   text-transform: uppercase;
 }
 
-.descripcion-gasto p {
+.expense-description p {
   margin-bottom: 1rem;
 }
 
-.descripcion-gasto .nombre-gasto {
+.expense-description .expense-name {
   color: var(--gris-oscuro);
   font-size: 2.4rem;
   font-weight: 700;
 }
 
-.descripcion-gasto .nombre-gasto:hover {
+.expense-description .expense-name:hover {
   cursor: pointer;
 }
 
-.descripcion-gasto .fecha-gasto {
+.expense-description .expense-date {
   color: var(--gris-oscuro);
   font-size: 1.8rem;
   font-weight: 900;
 }
 
-.descripcion-gasto .fecha-gasto span {
+.expense-description .expense-date span {
   font-weight: 400;
 }
 
-.nuevo-gasto {
+.new-expense {
   position: fixed;
   right: 5rem;
   bottom: 5rem;
 }
 
-.nuevo-gasto img {
+.new-expense img {
   width: 5rem;
 }
 
-.nuevo-gasto img:hover {
+.new-expense img:hover {
   cursor: pointer;
 }
 
@@ -369,7 +369,7 @@ main {
   background-color: rgb(0 0 0 / 92%);
 }
 
-.modal .cerrar-modal {
+.modal .rename-modal {
   position: absolute;
   top: 3rem;
   right: 3rem;
@@ -377,11 +377,11 @@ main {
   height: 3rem;
 }
 
-.modal .cerrar-modal img {
+.modal .rename-modal img {
   width: 100%;
 }
 
-.modal .formulario {
+.modal .form {
   width: 40rem;
   max-width: 80rem;
   opacity: 0;
@@ -398,12 +398,12 @@ body .modal {
   overflow: hidden;
 }
 
-.modal .formulario.animar {
+.modal .form.animate {
   position: relative;
   opacity: 1;
 }
 
-.modal .formulario.cerrar {
+.modal .form.close {
   opacity: 0;
 }
 

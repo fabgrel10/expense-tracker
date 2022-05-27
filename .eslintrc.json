@@ -49,6 +49,7 @@
               "object",
               "type"
             ],
+            "jsx-a11y/label-has-associated-control": "off",
             "pathGroups": [
               {
                 "pattern": "./**/**\\.css",
