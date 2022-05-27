@@ -1,9 +1,9 @@
 import NewBudget from './NewBudget';
 
-const Header = () => (
+const Header = ({ budget, setBudget }) => (
   <header>
     <h1>Expense Tracker</h1>
-    <NewBudget />
+    <NewBudget budget={budget} setBudget={setBudget} />
   </header>
 );
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NewBudget = () => (
+const NewBudget = ({ budget, setBudget }) => (
   <div className="container-budget container shadow">
     <form className="form">
       <div className="field">
@@ -10,6 +10,8 @@ const NewBudget = () => (
           type="text"
           name="budget"
           id="budget"
+          value={budget}
+          onChange={e => setBudget(e.target.value)}
           placeholder="Amount"
         />
       </div>
