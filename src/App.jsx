@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from './components/Header';
+import NewExpenseIcon from './assets/images/new-expense.svg';
 
 function App() {
   const [budget, setBudget] = useState();
@@ -13,6 +14,12 @@ function App() {
         isAValidBudget={isAValidBudget}
         setIsAValidBudget={setIsAValidBudget}
       />
+
+      {isAValidBudget && (
+        <div className="new-expense">
+          <img src={NewExpenseIcon} alt="New Expense" />
+        </div>
+      )}
     </div>
   );
 }
